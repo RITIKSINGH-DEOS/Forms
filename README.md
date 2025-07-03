@@ -1,12 +1,88 @@
-# React + Vite
+# 📝 Forms - React + Vite Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern **React + Vite** frontend application designed for form handling and UI experimentation.
 
-Currently, two official plugins are available:
+The app is built using the Vite bundler for fast development and optimized builds.  
+It is **live and accessible** via GitHub Pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [Visit the Live App](https://ritiksingh-deos.github.io/Forms/)
+
+---
+
+## 🚀 Features
+
+- React functional components
+- Fast Vite dev environment
+- Modern JavaScript
+- Clean form UI (can customize)
+- GitHub Pages deployed (no backend)
+
+---
+
+## 🛠️ How to Run Locally
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/RITIKSINGH-DEOS/Forms.git
+cd Forms
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Start development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 🚀 Deployment Guide (GitHub Pages via Vite)
+
+1. Update `vite.config.js` with:
+
+```js
+export default defineConfig({
+  plugins: [react()],
+  base: "/Forms/"
+})
+```
+
+2. Add this in `package.json` scripts:
+
+```json
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "deploy": "gh-pages -d dist"
+}
+```
+
+3. Then run:
+
+```bash
+npm run build
+npm run deploy
+```
+
+---
+
+## ✍️ Author
+
+Made with 💙 by [Ritik Singh](https://github.com/RITIKSINGH-DEOS)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
